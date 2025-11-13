@@ -33,3 +33,11 @@ FROM pizza_sales;
 -- 3. Total Pizzas Sold
 SELECT SUM(quantity) AS Total_pizza_sold
 FROM pizza_sales;
+
+--4.Total Orders
+SELECT SUM(total_price) AS Total_Revenue
+FROM pizza_sales;
+
+--5.Avg Pizzas per Order
+SELECT ROUND(SUM(total_price), 2) AS Total_Revenue
+FROM pizza_sales;
